@@ -5,7 +5,7 @@ namespace ACME.LearningCenterPlatform.API.Publishing.Interfaces.Rest.Transform;
 
 public class AddVideoAssetToTutorialCommandFromResourceAssembler
 {
-    public AddVideoAssetToTutorialCommand ToCommandFromResource(AddVideoAssetToTutorialResource resource, int tutorialId)
+    public static AddVideoAssetToTutorialCommand ToCommandFromResource(AddVideoAssetToTutorialResource resource, int tutorialId)
     {
         return new AddVideoAssetToTutorialCommand(resource.VideoUrl, tutorialId);
     }
